@@ -35,20 +35,20 @@ const Navbar = () => {
                     variant: 'ghost',
                     size: 'sm',
                   })}>
-                  Pricing
+                  Precios
                 </Link>
                 <LoginLink
                   className={buttonVariants({
                     variant: 'ghost',
                     size: 'sm',
                   })}>
-                  Sign in
+                  Iniciar sesión
                 </LoginLink>
                 <RegisterLink
                   className={buttonVariants({
                     size: 'sm',
                   })}>
-                  Get started{' '}
+                  Comencemos{' '}
                   <ArrowRight className='ml-1.5 h-5 w-5' />
                 </RegisterLink>
               </>
@@ -67,7 +67,7 @@ const Navbar = () => {
                   name={
                     !user.given_name || !user.family_name
                       ? 'Your Account'
-                      : `${user.given_name} ${user.family_name}`
+                      : ${user.given_name} ${user.family_name}
                   }
                   email={user.email ?? ''}
                   imageUrl={user.picture ?? ''}
