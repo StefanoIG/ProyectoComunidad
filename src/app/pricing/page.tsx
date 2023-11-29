@@ -111,14 +111,14 @@ const Page = () => {
                     className={cn(
                       'relative rounded-2xl bg-white shadow-lg',
                       {
-                        'border-2 border-blue-600 shadow-blue-200':
+                        'border-2 border-red-500 shadow-orange-200':
                           plan === 'Pro',
                         'border border-gray-200':
                           plan !== 'Pro',
                       }
                     )}>
                     {plan === 'Pro' && (
-                      <div className='absolute -top-5 left-0 right-0 mx-auto w-32 rounded-full bg-gradient-to-r from-blue-600 to-cyan-600 px-3 py-2 text-sm font-medium text-white'>
+                      <div className='absolute -top-5 left-0 right-0 mx-auto w-32 rounded-full bg-gradient-to-r from-red-600 to-orange-500 px-3 py-2 text-sm font-medium text-white'>
                         Upgrade now
                       </div>
                     )}
@@ -138,7 +138,7 @@ const Page = () => {
                       </p>
                     </div>
 
-                    <div className='flex h-20 items-center justify-center border-b border-t border-gray-200 bg-gray-50'>
+                    <div className='flex h-20 items-center justify-center border-b border-t border-gray-200 bg-gray-100'>
                       <div className='flex items-center space-x-1'>
                         <p>
                           {quota.toLocaleString()} PDFs/mo
@@ -167,7 +167,7 @@ const Page = () => {
                               {negative ? (
                                 <Minus className='h-6 w-6 text-gray-300' />
                               ) : (
-                                <Check className='h-6 w-6 text-blue-500' />
+                                <Check className='h-6 w-6 text-red-500' />
                               )}
                             </div>
                             {footnote ? (
